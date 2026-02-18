@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Recipe Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <video autoplay muted loop playsinline id="hero-video">
+            <source src="hero-bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        <div class="hero-content">
+            <h1 class="animate-hero">Discover Your Next Favorite Meal</h1>
+            <p class="animate-hero delay-1">Explore thousands of delicious recipes from around the world.</p>
+            <div class="hero-search animate-hero delay-2">
+                <input type="text" id="searchInput" placeholder="Search for recipes (e.g., 'Pie', 'Chicken')...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <!-- Filters Bar -->
+        <div class="controls">
+            <div class="filter-group">
+                <label>Cuisine</label>
+                <select id="cuisineFilter">
+                    <option value="">All Cuisines</option>
+                    <!-- Populated by JS -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Min Rating</label>
+                <input type="number" id="ratingFilter" placeholder="0-5" min="0" max="5" step="0.1">
+            </div>
+            <div class="filter-group">
+                <label>Max Calories</label>
+                <input type="text" id="caloriesFilter" placeholder="e.g. 500">
+            </div>
+            <div class="action-buttons">
+                <button id="myCookbookBtn" class="secondary">❤️ My Cookbook</button>
+                <button id="shoppingListBtn" class="secondary">🛒 Shopping List</button>
+                <button id="resetBtn" class="secondary">Reset Filters</button>
+            </div>
+        </div>
+
+        <!-- Recipe Grid -->
+        <div id="recipeGrid" class="recipe-grid">
+            <!-- Populated by JS -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <!-- Detail Drawer -->
+    <div id="drawerOverlay" class="overlay hidden"></div>
+    <div id="detailDrawer" class="drawer hidden">
+        <button id="closeDrawer">&times;</button>
+        <div id="drawerContent">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div id="favoritesModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>❤️ My Cookbook</h2>
+            <div id="favoritesGrid" class="recipe-grid"></div>
+        </div>
+    </div>
+
+    <!-- Shopping List Modal -->
+    <div id="shoppingListModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>🛒 Shopping List</h2>
+            <ul id="shoppingListItems"></ul>
+            <button id="clearShoppingList" class="danger-btn">Clear List</button>
+            <button id="copyShoppingList" class="primary-btn">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <!-- Cooking Mode Overlay -->
+    <div id="cookingModeModal" class="modal fullscreen-modal hidden">
+        <div class="modal-content fullscreen-content">
+            <span class="close-modal" id="closeCookingMode">&times;</span>
+            <div id="cookingStepsContainer">
+                <!-- Dynamic Steps -->
+            </div>
+            <div class="cooking-controls">
+                <button id="prevStepBtn" class="secondary">Previous</button>
+                <span id="stepIndicator">Step 1 of 5</span>
+                <button id="nextStepBtn" class="primary-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Gourmet Recipe Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

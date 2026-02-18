@@ -1,0 +1,76 @@
+[
+  {
+    "Content": "North America",
+    "Country.State": "US",
+    "cuisine": "Southern Recipes",
+    "title": "Sweet Potato Pie",
+    "URL": "https://www.allrecipes.com/recipe/12142/sweet-potato-pie-1/",
+    "rating": 4.8,
+    "total_time": 115,
+    "prep_time": 15,
+    "cook_time": 100,
+    "description": "Shared from a Southern recipe, this homemade sweet potato pie is easy to make with boiled sweet potato. Try it, it may just be the best you've ever tasted!",
+    "ingredients": [
+      "0.5 cup milk",
+      "2 large eggs",
+      "0.5 teaspoon ground nutmeg",
+      "0.5 teaspoon ground cinnamon",
+      "1 teaspoon vanilla extract",
+      "1 (9 inch) unbaked pie crust"
+    ],
+    "instructions": [
+      "Place whole sweet potato in pot and cover with water; bring to a boil. Boil until tender when pierced with a fork, 40 to 50 minutes.",
+      "Preheat the oven to 350 degrees F (175 degrees C).",
+      "Remove sweet potato from the pot and run under cold water. Remove and discard skin.",
+      "Break sweet potato flesh apart and place in a bowl. Add butter and mix with an electric mixer until well combined. Add sugar, milk, eggs, nutmeg, cinnamon, and vanilla; beat on medium speed until mixture is smooth. Pour filling into unbaked pie crust.",
+      "Bake in the preheated oven until a knife inserted in the center comes out clean, 55 to 60 minutes.",
+      "Remove from the oven and let cool before serving."
+    ],
+    "nutrients": {
+      "calories": "389 kcal",
+      "carbohydrateContent": "48 g",
+      "cholesterolContent": "78 mg",
+      "fiberContent": "3 g",
+      "proteinContent": "5 g",
+      "saturatedFatContent": "10 g",
+      "sodiumContent": "254 mg",
+      "sugarContent": "28 g",
+      "fatContent": "21 g"
+    },
+    "serves": "8 servings"
+  },
+    {
+    "Content": "North America",
+    "Country.State": "US",
+    "cuisine": "American",
+    "title": "Classic Mac and Cheese",
+    "URL": "https://www.allrecipes.com/recipe/12142/mac-and-cheese/",
+    "rating": 4.5,
+    "total_time": 45,
+    "prep_time": 15,
+    "cook_time": 30,
+    "description": "Classic creamy mac and cheese.",
+    "ingredients": [
+      "1 box macaroni",
+      "2 cups cheese",
+      "1 cup milk"
+    ],
+    "instructions": [
+      "Boil pasta.",
+      "Melt cheese.",
+      "Mix."
+    ],
+    "nutrients": {
+      "calories": "500 kcal",
+      "carbohydrateContent": "60 g",
+      "cholesterolContent": "50 mg",
+      "fiberContent": "2 g",
+      "proteinContent": "15 g",
+      "saturatedFatContent": "12 g",
+      "sodiumContent": "400 mg",
+      "sugarContent": "5 g",
+      "fatContent": "25 g"
+    },
+    "serves": "4 servings"
+  }
+]
